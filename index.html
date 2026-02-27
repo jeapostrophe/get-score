@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="en" class="theme-dark">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>gb-daw</title>
-		<script>
-			(function(){
-				var t = localStorage.getItem('gb-daw-theme');
-				var dark = t === 'light' ? false : t === 'dark' ? true :
-					window.matchMedia('(prefers-color-scheme: dark)').matches;
-				document.documentElement.className = dark ? 'theme-dark' : 'theme-light';
-			})();
-		</script>
-		<script type="module" crossorigin src="/get-score/assets/index-DTa4LhV4.js"></script>
-		<link rel="stylesheet" crossorigin href="/get-score/assets/index-bHVo87zX.css">
-	</head>
-	<body>
-		<div id="app"></div>
-		<script src="/get-score/wasm-pkg/gb_daw_wasm.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Score</title>
+    <script>
+      (function () {
+        var t = localStorage.getItem("gb-daw-theme");
+        var dark =
+          t === "light"
+            ? false
+            : t === "dark"
+              ? true
+              : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.className = dark
+          ? "theme-dark"
+          : "theme-light";
+      })();
+    </script>
+    <script type="module" crossorigin src="/get-score/assets/index-CPXPI0vz.js"></script>
+    <link rel="stylesheet" crossorigin href="/get-score/assets/index-De6bBxUJ.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/get-score/wasm-pkg/gb_daw_wasm.js"></script>
+  </body>
 </html>
