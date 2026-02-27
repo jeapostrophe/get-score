@@ -1,0 +1,11 @@
+{
+  "name": "gb-daw-wasm",
+  "version": "0.1.0",
+  "files": [
+    "gb_daw_wasm_bg.wasm",
+    "gb_daw_wasm.js",
+    "gb_daw_wasm.d.ts"
+  ],
+  "browser": "gb_daw_wasm.js",
+  "types": "gb_daw_wasm.d.ts"
+}
