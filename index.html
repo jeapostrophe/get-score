@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="theme-dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>gb-daw</title>
+		<script>
+			(function(){
+				var t = localStorage.getItem('gb-daw-theme');
+				var dark = t === 'light' ? false : t === 'dark' ? true :
+					window.matchMedia('(prefers-color-scheme: dark)').matches;
+				document.documentElement.className = dark ? 'theme-dark' : 'theme-light';
+			})();
+		</script>
+		<script type="module" crossorigin src="/get-score/assets/index-BRsxR_-Y.js"></script>
+		<link rel="stylesheet" crossorigin href="/get-score/assets/index-Cp57gO3-.css">
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="/get-score/wasm-pkg/gb_daw_wasm.js"></script>
+	</body>
+</html>
